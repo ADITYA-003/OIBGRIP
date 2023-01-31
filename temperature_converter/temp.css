@@ -1,0 +1,226 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+   
+}
+
+body{
+    background: url("https://static.vecteezy.com/system/resources/previews/006/174/573/original/beautiful-blue-sky-background-free-vector.jpg") no-repeat;
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    align-items: center; 
+}
+.logo{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  
+}
+.logo-name{
+    position: relative;
+}
+.fa-temperature-half{
+
+    background: linear-gradient(90deg, rgb(25, 0, 255), rgb(255, 67, 20));
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease;
+
+}
+.logo-name a{
+
+    background: linear-gradient(90deg, rgb(25, 0, 255), rgb(255, 67, 20));
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.logo-name a::before{
+    content: "";
+    position:absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+
+    background: linear-gradient(90deg, rgb(25, 0, 255), rgb(255, 67, 20));
+    transition: all 0.5s ease-in-out;
+}
+
+.logo-name a:hover::before{
+    width: 100%;
+}
+.fa-temperature-half:hover{
+    background: linear-gradient(90deg, rgb(255, 67, 20), rgb(25, 0, 255));
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    padding: 0 20px;
+  
+}
+.links a{
+    background: none;
+ 
+}
+.links .fab{
+    background: none;
+    
+}
+
+.links .fab:hover{
+    background: linear-gradient(90deg,#2c92ef,hotpink);
+    -webkit-background-clip:text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    transition:all 0.3s ease linear;
+}
+.container{
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    padding: 5rem;
+ 
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.box{
+    
+        
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.container h1{
+
+     background: none;
+     font-weight: bold;
+     background: linear-gradient(135deg,rgb(251, 251, 251),rgb(255, 0, 0));
+     -webkit-background-clip:text;
+     background-clip:text;
+     -webkit-text-fill-color: transparent;
+
+}
+
+.main-box{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 50%;  
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 1px solid firebrick;
+    box-shadow: 1px 0px 0px 0px rgb(255, 158, 1);
+    background: whitesmoke;
+    border-radius: 12px;
+    padding: 2rem;
+    gap:1rem;
+
+
+}
+
+
+
+.main-box .one{
+    flex:1;
+    background: none;
+
+}
+.main-box .two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:2;
+
+
+    
+    
+}
+.main-box .three,.four,.five{
+    flex:1 100%;
+    padding: 1rem;
+    border: 1px solid royalblue;
+}
+
+.main-box .one input{
+    border: 1px solid firebrick;
+    border-radius: 8px;
+
+    padding: 1rem  1rem 1rem 10px;
+    font-family: sans-serif;
+    width: 100%;
+    
+  
+}
+.main-box .one input:focus{
+    outline: none;
+    color: blue;
+}
+
+
+.main-box .sel_val{
+    
+    border: 1px solid orange;
+    border-radius: 6px;
+}
+.main-box .two .sel_val input{
+ 
+ 
+    margin: 2rem;
+}
+
+label{
+   
+    color: royalblue;
+    font: 1rem 'Fira Sans', sans-serif;
+
+}
+
+button{
+    background: none;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  border-radius: 7px;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover{
+    background: linear-gradient(190deg, royalblue,hotpink);
+    color: white;
+}
+
+.three, .four{
+    color: royalblue;
+}

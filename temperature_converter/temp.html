@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="temp.css">
+    <script src="temp.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+
+        <div class="logo">
+
+            <i class="fa-2x fa-solid fa-temperature-half"></i>
+
+            <div class="logo-name">
+                <a href="#"> ConvT</a>
+            </div>
+        </div>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/aditya-mamgai-938831234/"><i class="fab fa-2x fa-linkedin"></i></a>
+            <a href="https://github.com/ADITYA-003"><i class="fab fa-2x fa-github"></i></a>
+            <a href="https://www.instagram.com/mamgaiaditya/"><i class="fab fa-2x fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-2x fa-instagram"></i></a>
+            </a>
+        </div>
+    </div>
+        <div class="container"> 
+            <div class="box">
+                <h1>
+                    Temperature Converter
+                </h1>
+            </div>
+           
+          <div class="main-box">
+            <div class="card one">
+
+                <input type="number" id="temp" placeholder="Enter Value"id="Fahrenheit">
+            
+                </div>
+                <div class="card two">
+                    
+                <div class="sel_val">
+                    <input type="radio" name="t_val" id="cel" value="cel" ><label for="cel">Celsius °C</label>
+                    <input type="radio" name="t_val" id="kel" value="kel" ><label for="kel">Kelvin °K</label>
+                    <input type="radio" name="t_val" id="fah" value="fah" ><label for="fah">fahrenheit°F</label> <br>
+                </div>
+                </div>
+                
+         
+            <div class="card three">    
+                    <h4 id="cels"></h4>
+                    </div>  
+                <div class="card four">
+
+                    <h4 id="kelv"></h4>
+                </div>
+               
+                <button type="button"  onclick="convT()">Convert</button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    </div>
+          </div>
+         
+</body>
+
+</html>
